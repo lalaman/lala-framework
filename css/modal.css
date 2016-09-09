@@ -1,0 +1,101 @@
+.la-modal-container {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.2);
+    transition: opacity 0.25s ease-out;
+    z-index: 98;
+}
+
+.la-modal-container.open {
+    opacity: 1;
+}
+
+.la-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.la-modal, .la-modal-med, .la-modal-big {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    left: calc(50vw - 200px);
+    background-color: #ffffff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 100;
+}
+
+.la-modal-med {
+    width: 700px;
+    left: calc(50vw - 350px);
+}
+
+.la-modal-big {
+    width: 1000px;
+    left: calc(50vw - 500px);
+}
+
+.la-modal-header, .la-modal-footer {
+    padding: 15px 20px;
+}
+
+.la-modal-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.la-modal-body {
+    padding: 20px 20px;
+}
+
+.la-modal-footer {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: right;
+}
+
+.la-modal-footer>button {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    background-color: transparent;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 25px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+}
+
+.la-modal-footer>button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.la-modal-footer>button:active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 600px) {
+
+    .la-modal, .la-modal-med, .la-modal-big {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .la-modal-header, .modal-footer { height: 10%; }
+    .la-modal-body { height: 80%; overflow-y: auto; }
+}
