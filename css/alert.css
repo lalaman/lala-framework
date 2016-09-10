@@ -9,9 +9,10 @@
 }
 
 .lala-alert {
+    position: relative;
     width: 300px;
     border-radius: 2px;
-    padding: 20px 20px;
+    padding: 20px 45px 20px 20px;
     color: #ffffff;
     font-size: 14px;
     pointer-events: auto;
@@ -20,6 +21,7 @@
     margin-left: auto;
     margin-right: 20px;
     cursor: pointer;
+    word-wrap: break-all;
     opacity: 0;
 }
 
@@ -37,11 +39,26 @@
 }
 
 .lala-alert.warning {
-    background-color: #e6ab57;
+    background-color: #fbcc50;
 }
 
 .lala-alert.danger {
-    background-color: #d66955;
+    background-color: #e86565;
+}
+
+.la-alert-close {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    outline: none;
+}
+
+.la-alert-close:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 @keyframes bounce {

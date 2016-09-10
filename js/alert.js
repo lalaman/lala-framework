@@ -64,6 +64,17 @@
         this.alert.classList.add(this.status);
         this.alert.innerHTML = this.message;
 
+        // create close button
+        var close_button = document.createElement('button');
+        close_button.classList.add('la-alert-close');
+        var icon = document.createElement('i');
+        icon.classList.add('material-icons');
+        icon.innerHTML = 'close';
+        close_button.appendChild(icon);
+
+        // add close button to alert
+        this.alert.appendChild(close_button);
+
         // add alert to container
         this.container.insertBefore(this.alert, this.container.firstChild);
         setTimeout(function() { this.alert.classList.add('appear'); }.bind(this), 50);
@@ -77,7 +88,7 @@
     function destroy() {
         this.timeout = setTimeout(function() {
             this.alert.classList.remove('appear');
-            setTimeout(function() {
+            this.timeout = setTimeout(function() {
                 if (this.timeout) {
                     this.alert.parentNode.removeChild(this.alert);
 
