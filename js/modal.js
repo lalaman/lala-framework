@@ -83,15 +83,6 @@
     };
 
     // private methods
-    function extendDefaults(source, properties) {
-        var property;
-        for (property in properties) {
-            if (properties.hasOwnProperty(property)) {
-                source[property] = properties[property];
-            }
-        }
-        return source;
-    }
 
     function findModal(selector) {
          return document.querySelectorAll('[la-modal="' + selector + '"]')[0];

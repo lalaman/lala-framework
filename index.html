@@ -10,7 +10,9 @@
     <link type="text/css" rel="stylesheet" href="css/global.css" />
     <link type="text/css" rel="stylesheet" href="css/button.css" />
     <link type="text/css" rel="stylesheet" href="css/modal.css" />
+    <link type="text/css" rel="stylesheet" href="css/alert.css" />
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <!--[if lt IE 9]>
     <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +23,10 @@
     <!-- small modal -->
     <div class="la-modal-container" la-modal="smallModal">
         <div class="la-modal">
-            <div class="la-modal-header">Modal Header</div>
+            <div class="la-modal-header">
+                <button class="la-modal-close" la-modal-close><i class="material-icons">close</i></button>
+                Modal Header
+            </div>
             <div class="la-modal-body">
                 Are you sure you want to cancel the event search? You will not be able to undo this action.
             </div>
@@ -35,7 +40,10 @@
     <!-- medium modal -->
     <div class="la-modal-container" la-modal="medModal">
         <div class="la-modal-med">
-            <div class="la-modal-header">Lorem Ipsum</div>
+            <div class="la-modal-header">
+                <button class="la-modal-close" la-modal-close><i class="material-icons">close</i></button>
+                Lorem Ipsum
+            </div>
             <div class="la-modal-body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor luctus lorem nec vulputate. Cras ex nisl, malesuada nec sem nec, pellentesque commodo purus. Etiam et consectetur eros. Suspendisse mattis elit sed urna dapibus faucibus. Proin viverra elit a dapibus mollis. Aenean sed dignissim felis. Etiam nec volutpat augue, a cursus tortor. Vestibulum finibus quam ut odio tincidunt, ut dictum augue hendrerit. Ut pellentesque venenatis mi in aliquam. Duis condimentum placerat hendrerit.
             </div>
@@ -45,10 +53,13 @@
         </div>
     </div>
 
-    <!-- medium modal -->
+    <!-- large modal -->
     <div class="la-modal-container" la-modal="bigModal">
         <div class="la-modal-big">
-            <div class="la-modal-header">Large Modal Title</div>
+            <div class="la-modal-header">
+                <button class="la-modal-close" la-modal-close><i class="material-icons">close</i></button>
+                Large Modal Title
+            </div>
             <div class="la-modal-body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor luctus lorem nec vulputate. Cras ex nisl, malesuada nec sem nec, pellentesque commodo purus. Etiam et consectetur eros. Suspendisse mattis elit sed urna dapibus faucibus. Proin viverra elit a dapibus mollis. Aenean sed dignissim felis. Etiam nec volutpat augue, a cursus tortor. Vestibulum finibus quam ut odio tincidunt, ut dictum augue hendrerit. Ut pellentesque venenatis mi in aliquam. Duis condimentum placerat hendrerit.
 
@@ -82,12 +93,22 @@
         <p>
             <button class="la-btn" la-modal-for="bigModal">Large modal</button>
         </p>
+
+        <p>
+            <button id="show-success" class="la-btn" lala-alert-dur="2000" lala-alert="success" lala-alert-msg="This was a huge success">Success</button>
+            <button class="la-btn" lala-alert-dur="6000" lala-alert="info" lala-alert-msg="Some random information here">Info</button>
+        </p>
+
     </div>
+
+    <!-- alert -->
+
 
     <!-- javascript -->
     <script type="text/javascript" src="js/global.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/alert.js"></script>
 </body>
 
 </html>

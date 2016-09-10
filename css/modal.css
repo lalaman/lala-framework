@@ -28,6 +28,7 @@
 .la-modal, .la-modal-med, .la-modal-big {
     position: absolute;
     top: 0;
+    border-radius: 2px;
     width: 400px;
     left: calc(50vw - 200px);
     background-color: #ffffff;
@@ -47,11 +48,27 @@
 }
 
 .la-modal-header, .la-modal-footer {
-    padding: 15px 20px;
+    padding: 15px 20px 10px;
 }
 
 .la-modal-header {
     border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+button.la-modal-close {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+    float: right;
+    padding: 0;
+    margin-top: -2px;
+    color: rgba(0,0,0,0.3);
+}
+
+button.la-modal-close:hover {
+    color: rgba(0,0,0,0.5);
 }
 
 .la-modal-body {
@@ -70,7 +87,7 @@
     height: 35px;
     line-height: 35px;
     padding: 0 25px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     box-shadow: none;
     cursor: pointer;
@@ -86,9 +103,9 @@
     background-color: rgba(0,0,0,0.1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
-    .la-modal, .la-modal-med, .la-modal-big {
+    .la-modal-big {
         height: 100%;
         width: 100%;
         top: 0;
@@ -96,6 +113,73 @@
         margin: 0;
     }
 
-    .la-modal-header, .modal-footer { height: 10%; }
-    .la-modal-body { height: 80%; overflow-y: auto; }
+    .la-modal-big>.la-modal-header,
+    .la-modal-big>.la-modal-footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    .la-modal-big>.la-modal-footer {
+        justify-content: flex-end;
+    }
+
+    .la-modal-big>.la-modal-body {
+        height: 80%;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .la-modal-med {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .la-modal-med>.la-modal-header,
+    .la-modal-med>.la-modal-footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    .la-moda-med>.la-modal-footer {
+        justify-content: flex-end;
+    }
+
+    .la-modal-med>.la-modal-body {
+        height: 80%;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .la-modal {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .la-modal>.la-modal-header,
+    .la-modal>.la-modal-footer {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    .la-modal>.la-modal-footer {
+        justify-content: flex-end;
+    }
+
+    .la-modal>.la-modal-body {
+        height: 80%;
+        overflow-y: auto;
+    }
 }
