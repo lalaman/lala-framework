@@ -24,12 +24,33 @@ function extendDefaults(source, properties) {
     return source;
 }
 
-window.onload = function() {
+(function(window){
+    if(window.Package){
+        Lala = {};
+    } else {
+        window.Lala = {};
+    }
+})(window);
 
-    // init all modals
-    new LaModal();
-
-    // init all alerts
-    new Lalalert();
-
+Lala.modal = function(options) {
+    if (!options) {
+        new LaModal();
+    } else {
+        new LaModal(options);
+    }
 };
+
+Lala.alert = function(message, status, duration) {
+    if (!message) {
+        new Lalalert();
+    } else {
+        new Lalalert({
+            message: message,
+            status: status,
+            duration: duration
+        }).show();
+    }
+};
+
+Lala.modal();
+Lala.alert();
