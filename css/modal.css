@@ -63,6 +63,7 @@ button.la-modal-close {
     vertical-align: middle;
     float: right;
     padding: 0;
+    margin-left: auto;
     margin-top: -2px;
     color: rgba(0,0,0,0.3);
 }
@@ -147,7 +148,7 @@ button.la-modal-close:hover {
         align-items: center;
     }
 
-    .la-moda-med>.la-modal-footer {
+    .la-modal-med>.la-modal-footer {
         justify-content: flex-end;
     }
 
