@@ -14,8 +14,22 @@ function bodyNoScroll(status) {
     }
 }
 
+function extendDefaults(source, properties) {
+    var property;
+    for (property in properties) {
+        if (properties.hasOwnProperty(property)) {
+            source[property] = properties[property];
+        }
+    }
+    return source;
+}
+
 window.onload = function() {
 
     // init all modals
     new LaModal();
+
+    // init all alerts
+    new Lalalert();
+
 };
