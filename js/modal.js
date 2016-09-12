@@ -45,6 +45,7 @@
         else {
             // bind selector to open modal
             modal_buttons = document.querySelectorAll(this.selector);
+            if (modal_buttons.length === 0) { return; }
             var selector = modal_buttons[0].attributes['la-modal-for'].value;
             var modal = findModal(selector);
             buildOverlay.call(this, modal);
@@ -90,8 +91,7 @@
 
     // build dark overlay
     function buildOverlay(modal) {
-        var overlay = document.createElement('div');
-        overlay.className = 'la-modal-overlay';
+        var overlay = createOverlay();
         overlay.addEventListener('click', this.close.bind(null, modal));
         modal.insertBefore(overlay, modal.firstChild);
         return;
