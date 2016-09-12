@@ -1,0 +1,96 @@
+.container,
+.container-fluid {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.container .row,
+.container-fluid .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row .col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row .col.xs-12    { width: 100%; float: left; }
+.row .col.xs-11    { width: 91.666667%; float: left; }
+.rol .col.xs-10    { width: 83.333333%; float: left; }
+.row .col.xs-9     { width: 75%; float: left; }
+.row .col.xs-8     { width: 66.666667%; float: left; }
+.row .col.xs-7     { width: 41.666667%; float: left; }
+.row .col.xs-6     { width: 50%; float: left; }
+.row .col.xs-4     { width: 33.333333%; float: left; }
+.row .col-xs-3     { width: 25%; float: left; }
+.row .col.xs-2     { width: 16.6666667%; float: left; }
+.row .col.xs-1     { width: 8.3333333%; float: left; }
+
+@media screen and (min-width: 601px) {
+    .row .col.s-12    { width: 100%; float: left; }
+    .row .col.s-11    { width: 91.666667%; float: left; }
+    .rol .col.s-10    { width: 83.333333%; float: left; }
+    .row .col.s-9     { width: 75%; float: left; }
+    .row .col.s-8     { width: 66.666667%; float: left; }
+    .row .col.s-7     { width: 41.666667%; float: left; }
+    .row .col.s-6     { width: 50%; float: left; }
+    .row .col.s-4     { width: 33.333333%; float: left; }
+    .row .col-s-3     { width: 25%; float: left; }
+    .row .col.s-2     { width: 16.6666667%; float: left; }
+    .row .col.s-1     { width: 8.3333333%; float: left; }
+}
+
+@media screen and (min-width: 769px) {
+    .row .col.m-12    { width: 100%; float: left; }
+    .row .col.m-11    { width: 91.666667%; float: left; }
+    .rol .col.m-10    { width: 83.333333%; float: left; }
+    .row .col.m-9     { width: 75%; float: left; }
+    .row .col.m-8     { width: 66.666667%; float: left; }
+    .row .col.m-7     { width: 41.666667%; float: left; }
+    .row .col.m-6     { width: 50%; float: left; }
+    .row .col.m-4     { width: 33.333333%; float: left; }
+    .row .col-m-3     { width: 25%; float: left; }
+    .row .col.m-2     { width: 16.6666667%; float: left; }
+    .row .col.m-1     { width: 8.3333333%; float: left; }
+}
+
+@media screen and (min-width: 993px) {
+    .row .col.l-12    { width: 100%; float: left; }
+    .row .col.l-11    { width: 91.666667%; float: left; }
+    .rol .col.l-10    { width: 83.333333%; float: left; }
+    .row .col.l-9     { width: 75%; float: left; }
+    .row .col.l-8     { width: 66.666667%; float: left; }
+    .row .col.l-7     { width: 41.666667%; float: left; }
+    .row .col.l-6     { width: 50%; float: left; }
+    .row .col.l-4     { width: 33.333333%; float: left; }
+    .row .col-l-3     { width: 25%; float: left; }
+    .row .col.l-2     { width: 16.6666667%; float: left; }
+    .row .col.l-1     { width: 8.3333333%; float: left; }
+}
+
+@media screen and (min-width: 1201px) {
+    .row .col.xl-12    { width: 100%; float: left; }
+    .row .col.xl-11    { width: 91.666667%; float: left; }
+    .rol .col.xl-10    { width: 83.333333%; float: left; }
+    .row .col.xl-9     { width: 75%; float: left; }
+    .row .col.xl-8     { width: 66.666667%; float: left; }
+    .row .col.xl-7     { width: 41.666667%; float: left; }
+    .row .col.xl-6     { width: 50%; float: left; }
+    .row .col.xl-4     { width: 33.333333%; float: left; }
+    .row .col-xl-3     { width: 25%; float: left; }
+    .row .col.xl-2     { width: 16.6666667%; float: left; }
+    .row .col.xl-1     { width: 8.3333333%; float: left; }
+}
