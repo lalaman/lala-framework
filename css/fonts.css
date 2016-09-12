@@ -1,0 +1,14 @@
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+h1 { font-size: 70px; }
+h2 { font-size: 55px; }
+h3 { font-size: 48px; }
+h4 { font-size: 38px; }
+h5 { font-size: 26px; }
