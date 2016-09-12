@@ -1,0 +1,36 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.la-nav {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 95;
+    transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.25);
+    transition: transform 0.35s ease-out;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+    .la-nav {
+        pointer-events: all;
+        transform: translate3d(-110%, 0, 0);
+    }
+
+    .la-nav.nav-open {
+        transition: transform 0.35s ease-out;
+        transform: translate3d(0, 0, 0);
+    }
+}
