@@ -65,7 +65,7 @@ html, body {
         position: absolute;
         float: right;
         top: calc(50% - 18px);
-        right: 35px;
+        right: 10px;
         height: 35px;
         line-height: 35px;
         cursor: pointer;
