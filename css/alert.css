@@ -1,3 +1,62 @@
+/* Alert button
+=========================*/
+button.la-btn[lala-alert] {
+    border: none;
+    color: #ffffff;
+    opacity: 1;
+}
+
+button.la-btn[lala-alert='success'] {
+    background: rgba(53, 197, 93, 1);
+}
+
+button.la-btn[lala-alert='success']:hover {
+    background: rgba(53, 197, 93, 0.8);
+}
+
+button.la-btn[lala-alert='success']:active {
+    background: rgba(53, 197, 93, 1);
+}
+
+button.la-btn[lala-alert='info'] {
+    background: rgba(52, 153, 212, 1);
+}
+
+button.la-btn[lala-alert='info']:hover {
+    background: rgba(52, 153, 212, 0.8);
+}
+
+button.la-btn[lala-alert='info']:active {
+    background: rgba(52, 153, 212, 1);
+}
+
+button.la-btn[lala-alert='warning'] {
+    background: rgba(251, 204, 80, 1);
+}
+
+button.la-btn[lala-alert='warning']:hover {
+    background: rgba(251, 204, 80, 0.8);
+}
+
+button.la-btn[lala-alert='warning']:active {
+    background: rgba(251, 204, 80, 1);
+}
+
+button.la-btn[lala-alert='danger'] {
+    background: rgba(224, 65, 97, 1);
+}
+
+button.la-btn[lala-alert='danger']:hover {
+    background: rgba(224, 65, 97, 0.8);
+}
+
+button.la-btn[lala-alert='danger']:active {
+    background: rgba(224, 65, 97, 1);
+}
+
+/* Lala alert
+=========================*/
+
 .lala-alert-container {
     width: 400px;
     position: absolute;
@@ -43,7 +102,7 @@
 }
 
 .lala-alert.danger {
-    background-color: #e86565;
+    background-color: #e04161;
 }
 
 .la-alert-close {

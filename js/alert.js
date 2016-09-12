@@ -19,9 +19,9 @@
 
         if (arguments[0] && typeof arguments[0] === 'object') {
             this.options = extendDefaults(defaults, arguments[0]);
-            this.message = defaults.message;
-            this.status = defaults.status;
-            this.duration = defaults.duration;
+            for (var index in this.options) {
+                this[index] = this.options[index];
+            }
         } else {
             this.init();
         }
@@ -90,7 +90,9 @@
             this.alert.classList.remove('appear');
             this.timeout = setTimeout(function() {
                 if (this.timeout) {
-                    this.alert.parentNode.removeChild(this.alert);
+                    if (this.alert.parentNode) {
+                        this.alert.parentNode.removeChild(this.alert);
+                    }
 
                     // check if this is the last alert
                     var remaining = document.querySelectorAll('.lala-alert');
@@ -107,7 +109,9 @@
         this.alert.classList.remove('appear');
         setTimeout(function() {
             if (this.timeout) {
-                this.alert.parentNode.removeChild(this.alert);
+                if (this.alert.parentNode) {
+                    this.alert.parentNode.removeChild(this.alert);
+                }
 
                 // check if this is the last alert
                 var remaining = document.querySelectorAll('.lala-alert');
