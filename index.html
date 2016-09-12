@@ -7,11 +7,21 @@
     <meta name="description" content="Testing Mobile friendly Modal">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- plugins -->
+    <link type="text/css" rel="stylesheet" href="plugins/prism/prism.css" />
+
+    <!-- lala framework -->
     <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/fonts.css" />
+    <link type="text/css" rel="stylesheet" href="css/grid.css" />
     <link type="text/css" rel="stylesheet" href="css/button.css" />
     <link type="text/css" rel="stylesheet" href="css/modal.css" />
     <link type="text/css" rel="stylesheet" href="css/alert.css" />
+    <link type="text/css" rel="stylesheet" href="css/nav.css" />
+
+    <!-- google fonts -->
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <!--[if lt IE 9]>
@@ -20,6 +30,73 @@
 </head>
 
 <body>
+
+    <!-- nav -->
+    <div class="la-nav" la-nav="nav">
+        This is something<br />
+        This is also something
+    </div>
+
+    <div class="body-content">
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col l-12">
+                        <h2>Modal</h2>
+                        <div class="nav-toggle" la-nav-for="nav">
+                            <i class="material-icons">apps</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- real content -->
+        <div class="container">
+
+            <!-- modal -->
+            <div class="row">
+                <div class="col l-6 m-12">
+                    <p>
+                        <button class="la-btn" la-modal-for="smallModal">Small modal</button>
+                    </p>
+                    <p>
+                        <button class="la-btn" la-modal-for="medModal">Medium modal</button>
+                    </p>
+                    <p>
+                        <button class="la-btn" la-modal-for="bigModal">Large modal</button>
+                    </p>
+                </div>
+                <div class="col l-6 m-12">
+                    <!-- alert -->
+                    <p>
+                        <button class="la-btn" lala-alert-dur="6000" lala-alert="success" lala-alert-msg="This was a huge success">Success</button>
+                        <button class="la-btn" lala-alert-dur="6000" lala-alert="info" lala-alert-msg="Some random information here">Info</button>
+                        <button class="la-btn" lala-alert-dur="6000" lala-alert="warning" lala-alert-msg="You should really becareful running with scissors">Warning</button>
+                        <button class="la-btn" lala-alert-dur="6000" lala-alert="danger" lala-alert-msg="Uh oh.. bomb exploding in 5 seconds...">Danger</button>
+                    </p>
+
+                    <div>
+                        Init all elements
+                        <pre>
+                            <code class="language-javascript">
+                                // init all alerts
+                                Lala.alert();
+
+                                // init all modals
+                                Lala.modal();
+                            </code>
+                        </pre>
+                    </div>
+                    <h2>Suck it motherf****ers</h2>
+                    Hey how's it going?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modals -->
     <!-- small modal -->
     <div class="la-modal-container" la-modal="smallModal">
         <div class="la-modal">
@@ -79,38 +156,16 @@
         </div>
     </div>
 
-    <div class="body-container">
-        <div class="la-nav">
-
-        </div>
-
-        <p>
-            <button class="la-btn" la-modal-for="smallModal">Small modal</button>
-        </p>
-        <p>
-            <button class="la-btn" la-modal-for="medModal">Medium modal</button>
-        </p>
-        <p>
-            <button class="la-btn" la-modal-for="bigModal">Large modal</button>
-        </p>
-
-        <p>
-            <button id="show-success" class="la-btn" lala-alert-dur="6000" lala-alert="success" lala-alert-msg="This was a huge success">Success</button>
-            <button class="la-btn" lala-alert-dur="6000" lala-alert="info" lala-alert-msg="Some random information here">Info</button>
-            <button class="la-btn" lala-alert-dur="6000" lala-alert="warning" lala-alert-msg="You should really becareful running with scissors">Warning</button>
-            <button class="la-btn" lala-alert-dur="6000" lala-alert="danger" lala-alert-msg="Uh oh.. bomb exploding in 5 seconds...">Danger</button>
-        </p>
-
-    </div>
-
-    <!-- alert -->
-
-
     <!-- javascript -->
+    <!-- plugins -->
+    <script type="text/javascript" src="plugins/prism/prism.js"></script>
+
+    <!-- lala framework -->
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/alert.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
