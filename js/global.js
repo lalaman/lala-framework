@@ -1,12 +1,12 @@
 function bodyNoScroll(status) {
     if (status) {
         document.body.style.overflow = 'hidden';
-        if (window.innerWidth > 600) {
+        if (window.innerHeight < document.body.scrollHeight) {
             document.body.style.paddingRight = '17px';
         }
     } else {
         document.body.style.overflow = 'auto';
-        if (window.innerWidth > 600) {
+        if (window.innerHeight < document.body.scrollHeight) {
             document.body.style.paddingRight = '0';
         }
     }
