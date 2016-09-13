@@ -59,7 +59,7 @@ button.la-btn[lala-alert='danger']:active {
 
 .lala-alert-container {
     width: 400px;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 0px;
     overflow: hidden;
